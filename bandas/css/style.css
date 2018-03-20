@@ -1,0 +1,41 @@
+
+.container{
+
+    margin:0 auto;
+    width: 940px;
+} 
+
+{
+    border-bottom: 1px solid;  
+    color: darkgray;
+}
+
+
+table, td, th {
+    border: 1px solid black;
+	margin: auto;
+	
+  }
+  
+ img {
+	 height:250px;
+	 
+	 
+ }
+ 
+ #discografia img {
+	 height:150px;
+ }
+ 
+ hr {
+	 height:1px;
+ }
+ 
+ #integrantes h1 {
+	 text-align:center;
+ }
+ 
+  #discografia h1 {
+	 text-align:center;
+ }
+	 

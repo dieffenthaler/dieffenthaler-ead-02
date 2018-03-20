@@ -1,0 +1,7 @@
+var num1 = prompt("Digite um número")
+var num2 = prompt("Digite outro número")
+var soma = parseInt(num1)+parseInt(num2)
+var subt = parseInt(num1)-parseInt(num2)
+var mult = parseInt(num1)*parseInt(num2)
+var div = parseInt(num1)/parseInt(num2)
+alert("A + B: " + soma + "\n" + "A - B: " + subt + "\n" + "A x B: " + mult + "\n" + "A / B: " + div)

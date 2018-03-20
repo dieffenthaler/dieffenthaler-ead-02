@@ -1,0 +1,91 @@
+<!DOCTYPE html >
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jordano</title>
+<link href="./css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1>Formulário de cadastro</h1>
+
+	<form name="form1" action="#">
+    <p>
+		Nome Completo: <input type="text" nome='Nome Completo' placeholder='Informe o nome completo' >
+		
+	</p>
+    	<p>E-mail: <input type="text" name='email' placeholder="Informe um E-mail válido"/></p>
+	
+		<p>
+			Sexo:
+			<input type='radio' checked name='sexo' id='feminino' value='f'>
+			<label for='feminino'>Feminino</label>
+			<input type='radio' name='sexo' id='masculino' value='m'>
+			<label for='masculino'>Masculino</label>
+		  </p>
+
+		  <p>
+
+			Data de Nascimento: <input type="text" nome="Data de Nascimento" placeholder="dd/mm/aaaa">
+		  </p>
+
+		  <p>
+			Grau de Escolaridade: <select name="escolaridade" id="#"  size='1'>
+				<option value="F">Fundamental</option>
+				<option value="M">Médio</option>
+				<option value="S">superior</option>				
+			  </select>
+			  
+		  </p>
+
+		  <p>
+			 Estilo Musical Preferidos: <select name="EstiloMusical" id="Musicas" multiple size='5'>
+				<option value="R">Rock</option>
+				<option value="M">Funk</option>
+				<option value="P">Samba</option>
+				<option value="R">Pagode</option>
+				<option value="M">Pop</option>
+			
+				
+				
+			  </select>
+			</p>
+			
+			<p>
+				Nome do usuário: <input type="tex" nome='Nome do usuário' />
+			</p>
+
+			<p>
+				Senha: <input type="tex" nome='Senha' />
+			</p>
+
+			<p>
+				Cor Preferida: <input required type='color' >				
+			</p>
+
+			<p>
+				Quantidade de Filhos:	<input type="tex" nome='Quantidade de Filhos' /	>
+			</p>
+
+			<p>
+				Quantidade de veiculos: <input type="range" min='0' max='5'>
+			</p>
+			<p>
+				Comentários sobre o site:	<textarea cols='40' rows='6' name='comentario'></textarea>
+
+			</p>
+		
+				<p>
+					<input type='checkbox' name='spam' id='spam'>
+					Desejo receber ofertas via e-mail.
+				</p>
+				<p>
+					<input type='submit' value='Enviar' onclick="ValidaEmail(document.form1.email)">
+    			<input type='reset' value='Recomeçar'>
+    			<input type='hidden' name='id' id='id' value='234343'>
+				</p>
+
+    </form>
+<script src="./js/script.js"></script>
+</body>
+</html>
