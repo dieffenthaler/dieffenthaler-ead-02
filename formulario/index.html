@@ -3,10 +3,36 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Jordano</title>
-<link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+<style>
+p {
+ font-weight: bold;
+}
+
+body {
+	position:absolute;
+	right:30%;
+    
+}
+</style>
+
+<script>function ValidaEmail(inputText)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+document.form1.email.focus();
+return true;
+}
+else
+{
+alert("Você digitou um e-mail inválido!");
+document.form1.email.focus();
+return false;
+}
+}</script>
 	<h1>Formulário de cadastro</h1>
 
 	<form name="form1" action="#">
@@ -86,6 +112,5 @@
 				</p>
 
     </form>
-<script src="./js/script.js"></script>
 </body>
 </html>
