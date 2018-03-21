@@ -18,21 +18,7 @@ body {
 }
 </style>
 
-<script>function ValidaEmail(inputText)
-{
-var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-if(inputText.value.match(mailformat))
-{
-document.form1.email.focus();
-return true;
-}
-else
-{
-alert("Você digitou um e-mail inválido!");
-document.form1.email.focus();
-return false;
-}
-}</script>
+
 	<h1>Formulário de cadastro</h1>
 
 	<form name="form1" action="#">
@@ -40,7 +26,7 @@ return false;
 		Nome Completo: <input type="text" nome='Nome Completo' placeholder='Informe o nome completo' >
 		
 	</p>
-    	<p>E-mail: <input type="text" name='email' placeholder="Informe um E-mail válido"/></p>
+    	<p>E-mail: <input type="email" name='email' placeholder="Informe um E-mail válido"/></p>
 	
 		<p>
 			Sexo:
@@ -106,7 +92,7 @@ return false;
 					Desejo receber ofertas via e-mail.
 				</p>
 				<p>
-					<input type='submit' value='Enviar' onclick="ValidaEmail(document.form1.email)">
+					<input type='submit' value='Enviar'">
     			<input type='reset' value='Recomeçar'>
     			<input type='hidden' name='id' id='id' value='234343'>
 				</p>
